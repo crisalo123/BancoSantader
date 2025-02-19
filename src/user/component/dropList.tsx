@@ -2,11 +2,16 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSepara
 import { IoMenuOutline } from "react-icons/io5";
 import { GrClose } from "react-icons/gr";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "@/contex/AuthContext";
 
 
 export const DropList = () => {
 
    const [isOpen, setIsOpen] = useState(false)
+   const navigate = useNavigate()
+
+  const { logout } = useAuth()
   return (
    <div className="relative"  >
    <DropdownMenu onOpenChange={(open) => setIsOpen(open)}>
@@ -35,7 +40,16 @@ export const DropList = () => {
     <DropdownMenuItem>Seguimiento de gestiones</DropdownMenuItem>
     <DropdownMenuItem>Centro de Ayuda</DropdownMenuItem>
     <DropdownMenuItem>Fila agil</DropdownMenuItem>
+
+
+
+
+
+    <DropdownMenuItem className=" font-semibold block md:hidden hover:text-primary-800"><span  onClick={() => logout(() => navigate('/login'))}>
+      cerrar sesion</span></DropdownMenuItem>
     </DropdownMenuContent>
+
+    
     </DropdownMenu>
     </div>
   )

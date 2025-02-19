@@ -59,7 +59,7 @@ export const LoginForm:React.FC<LoginFormProps> = ({className, onSuccess}) => {
              leftIcon={
                 <FaEye className='hover:cursor-pointer hover:text-primary-800' onClick={() => setShowPassword(!showPassword)} />
              }
-             iconClass='mx-72 mt-1  md:mx-[380px] lg:mx-[360px]'
+             iconClass='mx-60 mt-1  md:mx-[380px] lg:mx-[360px]'
             />
            
           </div>
@@ -70,10 +70,11 @@ export const LoginForm:React.FC<LoginFormProps> = ({className, onSuccess}) => {
              {...register('username')}
               className='text-sm rounded-md'
               error={errors.username?.message}
+              maxLength={12}
               leftIcon={
                 <FaEye className='hover:cursor-pointer hover:text-primary-800' onClick={() => setShowUser(!showuser)} />
              }
-             iconClass='mx-72 mt-1 md:mx-[380px] lg:mx-[360px]'
+             iconClass='mx-60 mt-1 md:mx-[380px] lg:mx-[360px]'
             
             />
            
