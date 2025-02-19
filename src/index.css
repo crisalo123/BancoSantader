@@ -1,0 +1,19 @@
+
+
+
+
+
+
+.removedIcon::-webkit-calendar-picker-indicator {
+  visibility: hidden;
+}
+
+.inputstilo {
+  background-color: blue;
+  border-color: aqua;
+}
+
+
+
+
+
