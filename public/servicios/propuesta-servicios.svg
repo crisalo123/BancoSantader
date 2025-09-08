@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2000" viewBox="0 0 1600 2000">
+  <defs>
+    <style>
+      .title{font:700 56px 'Inter', system-ui, -apple-system, Segoe UI, Roboto; fill:#111}
+      .subtitle{font:500 22px 'Inter', system-ui; fill:#555}
+      .section{font:600 34px 'Inter', system-ui; fill:#111}
+      .cardTitle{font:600 26px 'Inter', system-ui; fill:#111}
+      .cardText{font:400 18px 'Inter', system-ui; fill:#666}
+      .brand{font:600 14px 'Inter', system-ui; letter-spacing:4px; fill:#777}
+      .button{font:600 18px 'Inter', system-ui; fill:#fff}
+      .caption{font:500 16px 'Inter', system-ui; fill:#666}
+    </style>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <clipPath id="rounded-xl">
+      <rect x="0" y="0" width="720" height="480" rx="24" ry="24"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="2000" fill="#FAFAFA"/>
+
+  <!-- Hero -->
+  <g transform="translate(120,120)">
+    <text class="brand" x="0" y="0">EL MUNDO DE LOS GLOBOS</text>
+    <text class="title" x="0" y="70">Decoración con globos elegante y memorable</text>
+    <text class="subtitle" x="0" y="110">Propuesta visual de la sección Servicios con bloque de contacto minimalista.</text>
+
+    <!-- Hero image -->
+    <g transform="translate(780,-20)" filter="url(#shadow)">
+      <rect x="0" y="0" width="700" height="520" rx="28" ry="28" fill="#EDEDED"/>
+      <image x="0" y="0" width="700" height="520" preserveAspectRatio="xMidYMid slice" href="img1.png"/>
+    </g>
+
+    <!-- CTA buttons -->
+    <g transform="translate(0,160)">
+      <rect x="0" y="0" width="170" height="48" rx="24" fill="#111"/>
+      <text x="85" y="32" text-anchor="middle" class="button">Cotizar ahora</text>
+
+      <rect x="190" y="0" width="180" height="48" rx="24" fill="none" stroke="#DDD"/>
+      <text x="280" y="32" text-anchor="middle" class="caption" fill="#111">Ver más</text>
+    </g>
+  </g>
+
+  <!-- Servicios section -->
+  <g transform="translate(120,760)">
+    <text class="section" x="0" y="0">Servicios</text>
+    <text class="subtitle" x="0" y="36">Diseños hechos a medida para cada ocasión.</text>
+
+    <!-- Grid 2x2 -->
+    <!-- Card 1 -->
+    <g transform="translate(0,64)" filter="url(#shadow)">
+      <rect x="0" y="0" width="720" height="720" rx="32" fill="#FFF"/>
+      <g transform="translate(0,0)">
+        <g clip-path="url(#rounded-xl)">
+          <image width="720" height="480" preserveAspectRatio="xMidYMid slice" href="img1.png"/>
+        </g>
+      </g>
+      <text class="cardTitle" x="24" y="530">Bouquets</text>
+      <text class="cardText" x="24" y="565">Arreglos personalizados con globos premium para cualquier ocasión.</text>
+      <g transform="translate(24,600)">
+        <rect x="0" y="0" width="120" height="40" rx="20" fill="#111"/>
+        <text x="60" y="26" text-anchor="middle" class="button">Cotizar</text>
+      </g>
+      <g transform="translate(154,600)">
+        <rect x="0" y="0" width="120" height="40" rx="20" fill="none" stroke="#DDD"/>
+        <text x="60" y="26" text-anchor="middle" class="caption" fill="#111">Ver más</text>
+      </g>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(760,64)" filter="url(#shadow)">
+      <rect x="0" y="0" width="720" height="720" rx="32" fill="#FFF"/>
+      <g clip-path="url(#rounded-xl)">
+        <image width="720" height="480" preserveAspectRatio="xMidYMid slice" href="img2.png"/>
+      </g>
+      <text class="cardTitle" x="24" y="530">Decoración con globos</text>
+      <text class="cardText" x="24" y="565">Arcos, columnas y backdrops diseñados a medida.</text>
+      <g transform="translate(24,600)">
+        <rect x="0" y="0" width="120" height="40" rx="20" fill="#111"/>
+        <text x="60" y="26" text-anchor="middle" class="button">Cotizar</text>
+      </g>
+      <g transform="translate(154,600)">
+        <rect x="0" y="0" width="120" height="40" rx="20" fill="none" stroke="#DDD"/>
+        <text x="60" y="26" text-anchor="middle" class="caption" fill="#111">Ver más</text>
+      </g>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(0,824)" filter="url(#shadow)">
+      <rect x="0" y="0" width="720" height="720" rx="32" fill="#FFF"/>
+      <g clip-path="url(#rounded-xl)">
+        <image width="720" height="480" preserveAspectRatio="xMidYMid slice" href="img1.png"/>
+      </g>
+      <text class="cardTitle" x="24" y="530">Fiestas infantiles</text>
+      <text class="cardText" x="24" y="565">Tematización completa con globos y detalles encantadores.</text>
+      <g transform="translate(24,600)">
+        <rect x="0" y="0" width="120" height="40" rx="20" fill="#111"/>
+        <text x="60" y="26" text-anchor="middle" class="button">Cotizar</text>
+      </g>
+      <g transform="translate(154,600)">
+        <rect x="0" y="0" width="120" height="40" rx="20" fill="none" stroke="#DDD"/>
+        <text x="60" y="26" text-anchor="middle" class="caption" fill="#111">Ver más</text>
+      </g>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(760,824)" filter="url(#shadow)">
+      <rect x="0" y="0" width="720" height="720" rx="32" fill="#FFF"/>
+      <g clip-path="url(#rounded-xl)">
+        <image width="720" height="480" preserveAspectRatio="xMidYMid slice" href="img2.png"/>
+      </g>
+      <text class="cardTitle" x="24" y="530">Eventos empresariales</text>
+      <text class="cardText" x="24" y="565">Branding con globos para lanzamientos y activaciones.</text>
+      <g transform="translate(24,600)">
+        <rect x="0" y="0" width="120" height="40" rx="20" fill="#111"/>
+        <text x="60" y="26" text-anchor="middle" class="button">Cotizar</text>
+      </g>
+      <g transform="translate(154,600)">
+        <rect x="0" y="0" width="120" height="40" rx="20" fill="none" stroke="#DDD"/>
+        <text x="60" y="26" text-anchor="middle" class="caption" fill="#111">Ver más</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Contacto minimalista -->
+  <g transform="translate(0,1900)">
+    <rect x="0" y="0" width="1600" height="100" fill="#FFFFFF"/>
+    <text class="section" x="120" y="64">Contacto</text>
+    <text class="caption" x="320" y="64">WhatsApp · Email · Instagram</text>
+  </g>
+</svg>
+
